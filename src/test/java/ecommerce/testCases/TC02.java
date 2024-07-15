@@ -1,6 +1,9 @@
 //Verify login is successful with correct email and password
 package ecommerce.testCases;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,7 +17,7 @@ import login.LoginClass;
 public class TC02 extends ListenerClass {
 
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void amazonLoginWithValidCredentials() {
+	public void amazonLoginWithValidCredentials() throws IOException {
 
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

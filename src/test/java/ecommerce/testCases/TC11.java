@@ -2,6 +2,7 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -27,7 +28,7 @@ public class TC11 extends ListenerClass {
 
 	@Test
 	// (retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void checkoutProcess() throws InterruptedException {
+	public void checkoutProcess() throws InterruptedException, IOException {
 
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

@@ -2,6 +2,7 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -20,7 +21,7 @@ import login.LoginClass;
 public class TC07 extends ListenerClass {
 	
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void verifyElements() {
+	public void verifyElements() throws IOException{
 	
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

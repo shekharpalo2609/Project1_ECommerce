@@ -2,6 +2,8 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,7 +18,7 @@ import login.LoginClass;
 public class TC08 extends ListenerClass {
 	
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void productSorting() throws InterruptedException {
+	public void productSorting() throws InterruptedException, IOException {
 		
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

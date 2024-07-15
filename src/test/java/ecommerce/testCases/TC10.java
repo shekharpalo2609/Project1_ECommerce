@@ -2,6 +2,7 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -21,7 +22,7 @@ import login.LoginClass;
 public class TC10 extends ListenerClass {
 	
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void updateCartDetail() throws InterruptedException {
+	public void updateCartDetail() throws InterruptedException, IOException {
 		
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

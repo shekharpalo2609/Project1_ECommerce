@@ -2,6 +2,7 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -23,7 +24,7 @@ import login.LoginClass;
 public class TC12 extends ListenerClass {
 
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void selectEachPaymentMethod() throws InterruptedException {
+	public void selectEachPaymentMethod() throws InterruptedException, IOException {
 
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

@@ -2,6 +2,9 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,7 +19,7 @@ import login.LoginClass;
 public class TC04 extends ListenerClass {
 
 	@Test // (retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void amazonEditProfile() throws InterruptedException {
+	public void amazonEditProfile() throws IOException, InterruptedException {
 
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

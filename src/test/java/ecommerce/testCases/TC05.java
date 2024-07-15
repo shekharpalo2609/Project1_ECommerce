@@ -2,6 +2,9 @@
 
 package ecommerce.testCases;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -15,7 +18,7 @@ import login.LoginClass;
 public class TC05 extends ListenerClass {
 
 	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void amazonSearchProduct() {
+	public void amazonSearchProduct() throws EncryptedDocumentException, IOException {
 		
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();

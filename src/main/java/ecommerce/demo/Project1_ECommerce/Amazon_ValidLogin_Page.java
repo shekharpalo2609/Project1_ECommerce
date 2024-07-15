@@ -8,7 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Amazon_ValidLogin_Page {
+import ddt.packages.DDT_File;
+
+public class Amazon_ValidLogin_Page extends DDT_File {
 
 	WebDriver driver;
 	
@@ -31,14 +33,14 @@ public class Amazon_ValidLogin_Page {
 	WebElement emailId;
 	
 	public void emailID() {
-		emailId.sendKeys("paloskr26@gmail.com",Keys.ENTER);
+		emailId.sendKeys(userNameCell,Keys.ENTER);
 	}
 	
 	@FindBy(css = "#ap_password")
 	WebElement password;
 	
 	public void password() {
-		password.sendKeys("paloskr@123",Keys.ENTER);
+		password.sendKeys(passwordCell,Keys.ENTER);
 	}
 	
 	
