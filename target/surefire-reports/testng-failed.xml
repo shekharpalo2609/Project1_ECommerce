@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Amazon Test on Chrome(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="ecommerce.testCases.TC01">
+        <methods>
+          <include name="amazonRegister"/>
+        </methods>
+      </class> <!-- ecommerce.testCases.TC01 -->
+    </classes>
+  </test> <!-- Amazon Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Amazon Suite] -->

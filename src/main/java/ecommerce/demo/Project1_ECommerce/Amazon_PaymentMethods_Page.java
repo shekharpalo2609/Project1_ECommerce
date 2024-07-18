@@ -62,7 +62,7 @@ public class Amazon_PaymentMethods_Page {
 		enterButton.click();
 	}
 	
-	@FindBy(name = "addCreditCardVerificationNumber0")
+	@FindBy(xpath = "//input[@name='addCreditCardVerificationNumber0']")
 	WebElement cvvNumber;
 	//div[@id='pp-dhDUdK-151']/input[@type='password']
 	public void enterCvvNumber() {

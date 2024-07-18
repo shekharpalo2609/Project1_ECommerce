@@ -25,6 +25,11 @@ public class TC01 extends ListenerClass {
 		homePage.register();
 		
 		Amazon_Register_Page registerPage = new Amazon_Register_Page(driver);
+		if(driver.getTitle().equals("Amazon Registration")) {
+			registerPage.name();
+			registerPage.mobileNo();
+			registerPage.password();
+		}
 		registerPage.emailId();
 		registerPage.mobileNo();
 		registerPage.name();

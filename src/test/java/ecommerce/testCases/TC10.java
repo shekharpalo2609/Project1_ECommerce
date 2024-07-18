@@ -21,7 +21,7 @@ import login.LoginClass;
 @Listeners(ListenerClass.class)
 public class TC10 extends ListenerClass {
 	
-	@Test(retryAnalyzer = AmazonRetryAnalyzer.class)
+	@Test//(retryAnalyzer = AmazonRetryAnalyzer.class)
 	public void updateCartDetail() throws InterruptedException, IOException {
 		
 		LoginClass login = new LoginClass();

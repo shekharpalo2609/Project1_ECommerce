@@ -2,6 +2,9 @@
 
 package ecommerce.testCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
@@ -28,7 +31,7 @@ public class TC11 extends ListenerClass {
 
 	@Test
 	// (retryAnalyzer = AmazonRetryAnalyzer.class)
-	public void checkoutProcess() throws InterruptedException, IOException {
+	public void checkoutProcess() throws InterruptedException, IOException, AWTException {
 
 		LoginClass login = new LoginClass();
 		login.amazonLaunch();
@@ -69,11 +72,12 @@ public class TC11 extends ListenerClass {
 		paymentPage.saveCardDetails();
 		Thread.sleep(1500);
 		driver.switchTo().defaultContent();
-		/*
-		 * ChromeOptions options = new ChromeOptions();
-		 * options.setExperimentalOption("excludeSwitches",Arrays.asList(
-		 * "disable-popup-blocking"));
-		 */	
+		
+		//ChromeOptions options = new ChromeOptions();
+		//options.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
+		// 	Robot e1= new Robot();
+		 //	e1.keyPress(KeyEvent.VK_ESCAPE);
+		 //	driver.switchTo().alert().dismiss();
 		/*
 		 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		 * wait.until(ExpectedConditions.visibilityOf(paymentPage.en));
