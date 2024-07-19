@@ -1,41 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[test case failed]]>
     </line>
-    <line>
-      <![CDATA[test case passed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-07-17T21:22:51 IST" name="Amazon Suite" finished-at="2024-07-17T21:23:35 IST" duration-ms="44504">
+  <suite started-at="2024-07-18T21:45:20 IST" name="Default suite" finished-at="2024-07-18T21:46:15 IST" duration-ms="55649">
     <groups>
     </groups>
-    <test started-at="2024-07-17T21:22:51 IST" name="Amazon Test on Chrome" finished-at="2024-07-17T21:23:35 IST" duration-ms="44504">
-      <class name="ecommerce.testCases.TC01">
-        <test-method signature="amazonRegister()[pri:0, instance:ecommerce.testCases.TC01@21282ed8]" started-at="2024-07-17T21:22:51 IST" name="amazonRegister" finished-at="2024-07-17T21:23:12 IST" duration-ms="20746" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2024-07-18T21:45:20 IST" name="Default test" finished-at="2024-07-18T21:46:15 IST" duration-ms="55649">
+      <class name="ecommerce.testCases.TC11">
+        <test-method signature="checkoutProcess()[pri:0, instance:ecommerce.testCases.TC11@957e06]" started-at="2024-07-18T21:45:20 IST" name="checkoutProcess" finished-at="2024-07-18T21:46:15 IST" duration-ms="55426" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#ap_phone_number"}
+              <![CDATA[element not interactable
   (Session info: chrome=126.0.6478.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc818cfc1ca064c3b499178d03adb1cb, findElement {using=css selector, value=#ap_phone_number}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58173/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc818cfc1ca064c3b499178d03adb1cb]]>
+Command: [6ba166c98236367a24ff1786767211a5, sendKeysToElement {id=f.6B75C0E216532779D427CA84DDACB7FB.d.D2EF63407418AC933FD7EDAB5763D886.e.285, value=[Ljava.lang.CharSequence;@743e66f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56228/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6ba166c98236367a24ff1786767211a5)] -> xpath: //input[@name='addCreditCardVerificationNumber0']]
+Session ID: 6ba166c98236367a24ff1786767211a5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_phone_number"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=126.0.6478.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc818cfc1ca064c3b499178d03adb1cb, findElement {using=css selector, value=#ap_phone_number}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58173/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc818cfc1ca064c3b499178d03adb1cb
+Command: [6ba166c98236367a24ff1786767211a5, sendKeysToElement {id=f.6B75C0E216532779D427CA84DDACB7FB.d.D2EF63407418AC933FD7EDAB5763D886.e.285, value=[Ljava.lang.CharSequence;@743e66f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56228/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6ba166c98236367a24ff1786767211a5)] -> xpath: //input[@name='addCreditCardVerificationNumber0']]
+Session ID: 6ba166c98236367a24ff1786767211a5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,15 +45,16 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at ecommerce.demo.Project1_ECommerce.Amazon_Register_Page.mobileNo(Amazon_Register_Page.java:24)
-at ecommerce.testCases.TC01.amazonRegister(TC01.java:34)
+at ecommerce.demo.Project1_ECommerce.Amazon_PaymentMethods_Page.enterCvvNumber(Amazon_PaymentMethods_Page.java:69)
+at ecommerce.testCases.TC11.checkoutProcess(TC11.java:86)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,23 +85,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
             <line>
               <![CDATA[test case failed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- amazonRegister -->
-      </class> <!-- ecommerce.testCases.TC01 -->
-      <class name="ecommerce.testCases.TC02">
-        <test-method signature="amazonLoginWithValidCredentials()[pri:0, instance:ecommerce.testCases.TC02@29215f06]" started-at="2024-07-17T21:23:12 IST" name="amazonLoginWithValidCredentials" finished-at="2024-07-17T21:23:35 IST" duration-ms="22717" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[test case passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazonLoginWithValidCredentials -->
-      </class> <!-- ecommerce.testCases.TC02 -->
-    </test> <!-- Amazon Test on Chrome -->
-  </suite> <!-- Amazon Suite -->
+        </test-method> <!-- checkoutProcess -->
+      </class> <!-- ecommerce.testCases.TC11 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
