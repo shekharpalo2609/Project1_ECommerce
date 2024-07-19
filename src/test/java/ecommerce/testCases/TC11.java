@@ -73,16 +73,7 @@ public class TC11 extends ListenerClass {
 		Thread.sleep(1500);
 		driver.switchTo().defaultContent();
 		
-		//ChromeOptions options = new ChromeOptions();
-		//options.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
-		// 	Robot e1= new Robot();
-		 //	e1.keyPress(KeyEvent.VK_ESCAPE);
-		 //	driver.switchTo().alert().dismiss();
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 * wait.until(ExpectedConditions.visibilityOf(paymentPage.en));
-		 * wait.until(ExpectedConditions.elementToBeClickable(element));
-		 */
+		
 		paymentPage.enterCvvNumber();
 		
 		

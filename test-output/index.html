@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ishan\AppData\Local\Temp\testng-eclipse--79555331\testng-customsuite.xml</span>
+                    <span>C:\Users\ishan\AppData\Local\Temp\testng-eclipse--828126133\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,15 +130,15 @@
                   <a name="checkoutProcess">
                   </a> <!-- checkoutProcess -->
                   <span class="method-name">checkoutProcess</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;nav-action-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (109, 15). Other element would receive the click: &lt;a href=&quot;/ref=nav_logo&quot; id=&quot;nav-logo-sprites&quot; class=&quot;nav-logo-link nav-progressive-attribute&quot; aria-label=&quot;Amazon.in&quot;&gt;...&lt;/a&gt;
   (Session info: chrome=126.0.6478.128)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ba166c98236367a24ff1786767211a5, sendKeysToElement {id=f.6B75C0E216532779D427CA84DDACB7FB.d.D2EF63407418AC933FD7EDAB5763D886.e.285, value=[Ljava.lang.CharSequence;@743e66f7}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56228/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6ba166c98236367a24ff1786767211a5)] -&gt; xpath: //input[@name=&apos;addCreditCardVerificationNumber0&apos;]]
-Session ID: 6ba166c98236367a24ff1786767211a5
+Command: [762effe4b79fcc50a16789d751c8d4d8, clickElement {id=f.974BC12153735B4F5FCD7DA7E201828A.d.F725EFEB282B633352350ACBD598C27C.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ishan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50009/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (762effe4b79fcc50a16789d751c8d4d8)] -&gt; xpath: (//span[@class=&apos;nav-action-inner&apos;])[1]]
+Session ID: 762effe4b79fcc50a16789d751c8d4d8
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,15 +152,16 @@ Session ID: 6ba166c98236367a24ff1786767211a5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at ecommerce.demo.Project1_ECommerce.Amazon_PaymentMethods_Page.enterCvvNumber(Amazon_PaymentMethods_Page.java:69)
-	at ecommerce.testCases.TC11.checkoutProcess(TC11.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at ecommerce.demo.Project1_ECommerce.Amazon_ValidLogin_Page.signIn(Amazon_ValidLogin_Page.java:29)
+	at login.LoginClass.amazonLogin(LoginClass.java:27)
+	at ecommerce.testCases.TC11.checkoutProcess(TC11.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -198,7 +199,7 @@ Session ID: 6ba166c98236367a24ff1786767211a5
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ishan\AppData\Local\Temp\testng-eclipse--79555331\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ishan\AppData\Local\Temp\testng-eclipse--828126133\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,12 +252,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkoutProcess')
 data.setCell(0, 2, 'ecommerce.testCases.TC11')
-data.setCell(0, 3, 55426);
+data.setCell(0, 3, 12259);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
